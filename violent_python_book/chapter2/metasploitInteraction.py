@@ -3,7 +3,6 @@ import argparse
 
 import nmap
 
-
 def findTargets(targetSubnet: str) -> list[str]:
     nmapScan: nmap.PortScanner = nmap.PortScanner()
     nmapScan.scan(targetSubnet, "445")
